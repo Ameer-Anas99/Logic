@@ -1,4 +1,4 @@
-// 5.	Check if a number is even and greater than 20.
+// 	Check if a number is even and greater than 20.
 import 'dart:io';
 
 void main() {

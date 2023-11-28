@@ -1,3 +1,5 @@
+//	Create a program to determine if a number is even or odd.
+
 // void main() {
 //   int number = 7;
 //   if (number % 2 == 0) {

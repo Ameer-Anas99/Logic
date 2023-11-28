@@ -1,5 +1,6 @@
 import 'dart:io';
 
+// Find Greatest Number Among 3 Numbers.
 void main() {
   stdout.write("Enter the first number: ");
   double num1 = double.parse(stdin.readLineSync()!);
@@ -22,4 +23,3 @@ void main() {
 
   print("The greatest number among is $greatestNumber");
 }
-// $num1, $num2, and $num3 is:

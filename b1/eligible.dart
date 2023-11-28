@@ -1,4 +1,4 @@
-// 3.	Create a program that checks if a person is eligible to vote (age >= 18).
+//	Create a program that checks if a person is eligible to vote (age >= 18).
 
 // void main() {
 //   int age = 25;
