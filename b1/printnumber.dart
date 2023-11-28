@@ -12,6 +12,7 @@ import 'dart:io';
 
 void main() {
   // Get user input for the range
+
   stdout.write('Enter the start number: ');
   int startNumber = int.parse(stdin.readLineSync()!);
 
@@ -19,6 +20,7 @@ void main() {
   int endNumber = int.parse(stdin.readLineSync()!);
 
   // Using a for loop to print numbers from startNumber to endNumber
+
   for (int i = startNumber; i <= endNumber; i++) {
     print(i);
   }
