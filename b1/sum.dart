@@ -1,3 +1,4 @@
+// Write a program to calculate the sum of the first n natural numbers using a loop
 import 'dart:io';
 
 void main() {

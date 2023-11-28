@@ -1,3 +1,4 @@
+// Create a program to generate the multiplication table for a given number using a loop.
 import 'dart:io';
 
 void main() {
