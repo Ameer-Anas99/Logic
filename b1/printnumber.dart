@@ -10,26 +10,26 @@
 
 // Using a for loop to print numbers from 10 to 1
 
-void main() {
-  for (int i = 10; i >= 1; i--) {
-    print(i);
-  }
-}
-
-// import 'dart:io';
-
 // void main() {
-//   // Get user input for the range
-
-//   stdout.write('Enter the start number: ');
-//   int startNumber = int.parse(stdin.readLineSync()!);
-
-//   stdout.write('Enter the end number: ');
-//   int endNumber = int.parse(stdin.readLineSync()!);
-
-//   // Using a for loop to print numbers from startNumber to endNumber
-
-//   for (int i = startNumber; i <= endNumber; i++) {
+//   for (int i = 10; i >= 1; i--) {
 //     print(i);
 //   }
 // }
+
+import 'dart:io';
+
+void main() {
+  // Get user input for the range
+
+  stdout.write('Enter the start number: ');
+  int startNumber = int.parse(stdin.readLineSync()!);
+
+  stdout.write('Enter the end number: ');
+  int endNumber = int.parse(stdin.readLineSync()!);
+
+  // Using a for loop to print numbers from startNumber to endNumber
+
+  for (int i = startNumber; i <= endNumber; i++) {
+    print(i);
+  }
+}
