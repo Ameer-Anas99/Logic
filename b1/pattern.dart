@@ -1,5 +1,8 @@
 //  Create a program that uses loops to print various patterns, such as triangles or rectangles
 
+//  Printing a Right Triangle:
+// ---------------------------
+
 import 'dart:io';
 
 void printRightTriangle(int height) {
