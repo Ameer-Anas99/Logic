@@ -7,7 +7,7 @@ void main() {
       if ((i + j <= 5))
         stdout.write(' ');
       else
-        stdout.write(' *');
+        stdout.write(" i");
     }
     stdout.writeln(' \n');
   }
