@@ -5,7 +5,7 @@ void main() {
     for (int j = 0; j <= i; j++) {
       stdout.write(String.fromCharCode("A".codeUnitAt(0) + i));
     }
-    stdout.write("\n");
+    stdout.writeln("");
   }
 
 //   String a;

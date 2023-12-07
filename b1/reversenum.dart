@@ -2,7 +2,7 @@ void main() {
   int number = 12345;
   int reversedNumber = reverseNumber(number);
   print('orginal Number: $number');
-  print("Reversef Number : $reversedNumber");
+  print("Reverse Number : $reversedNumber");
 }
 
 int reverseNumber(int num) {
