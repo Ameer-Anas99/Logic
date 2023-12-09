@@ -42,20 +42,32 @@
 //   print("$num is $result");
 // }
 
+// void main() {
+//   a(8);
+//   a(7);
+//   a(9);
+//   a(2);
+// }
+
+// void a(int num) {
+//   switch (num % 2) {
+//     case 0:
+//       print('$num is even ');
+//       break;
+//     case 1:
+//       print('$num is odd');
+//       break;
+//   }
+// }
+
 void main() {
-  a(8);
-  a(7);
-  a(9);
-  a(2);
+  a(5);
+  a(6);
+  a(3);
+  a(10);
 }
 
 void a(int num) {
-  switch (num % 2) {
-    case 0:
-      print('$num is even ');
-      break;
-    case 1:
-      print('$num is odd');
-      break;
-  }
+  List<String> result = ['even', 'odd'];
+  print('$num is ${result[num % 2]}');
 }
