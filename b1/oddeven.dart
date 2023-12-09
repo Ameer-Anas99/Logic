@@ -60,14 +60,26 @@
 //   }
 // }
 
+// void main() {
+//   a(5);
+//   a(6);
+//   a(3);
+//   a(10);
+// }
+
+// void a(int num) {
+//   List<String> result = ['even', 'odd'];
+//   print('$num is ${result[num % 2]}');
+// }
+
 void main() {
-  a(5);
-  a(6);
-  a(3);
-  a(10);
+  a(2);
+  a(12);
+  a(25);
+  a(29);
 }
 
 void a(int num) {
-  List<String> result = ['even', 'odd'];
+  Map<int, String> result = {0: 'even ', 1: 'odd'};
   print('$num is ${result[num % 2]}');
 }
