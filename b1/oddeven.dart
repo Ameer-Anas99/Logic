@@ -83,17 +83,32 @@
 //   Map<int, String> result = {0: 'even ', 1: 'odd'};
 //   print('$num is ${result[num % 2]}');
 // }
-void main() {
-  a(34);
-  a(44);
-  a(31);
-  a(54);
-}
+// void main() {
+//   a(34);
+//   a(44);
+//   a(31);
+//   a(54);
+// }
 
-String determineEvenOdd(int num) {
-  return (num % 2 == 0) ? 'even' : 'odd';
+// String determineEvenOdd(int num) {
+//   return (num % 2 == 0) ? 'even' : 'odd';
+// }
+
+// void a(int num) {
+//   print('$num is ${determineEvenOdd(num)}');
+// }
+
+void main() {
+  a(22);
+  a(33);
+  a(2);
+  a(11);
 }
 
 void a(int num) {
-  print('$num is ${determineEvenOdd(num)}');
+  if (num.isEven) {
+    print("$num is even");
+  } else if (num.isOdd) {
+    print(('$num is odd'));
+  }
 }
