@@ -31,28 +31,30 @@
 //   }
 // }
 
+// import 'dart:io';
+
+// void main() {
+//   for (int i = 1; i <= 5; i++) {
+//     for (int j = 1; j <= i; j++) {
+//       stdout.write("* ");
+//     }
+//     stdout.writeln(" ");
+//   }
+// }
+
 import 'dart:io';
 
 void main() {
-  for (int i = 1; i <= 5; i++) {
-    for (int j = 1; j <= i; j++) {
-      stdout.write("* ");
+  for (int i = 0; i < 6; i++) {
+    for (int s = 0; s < 6; s++) {
+      stdout.write(' ');
     }
-    stdout.writeln(" ");
+    for (int j = 1; j <= 6; j++) {
+      stdout.write(j);
+    }
+    stdout.writeln('');
   }
 }
-
-// void main(){
-//   for(int i=0;i<6;i++){
-//     for(int s=0;s<6;s++){
-//         stdout.write(' ');
-//     }
-//     for(int j=1;j<=6;j++){
-//         stdout.write(j);
-//     }
-//     stdout.writeln('');
-//   }
-// }
 
 // void main() {
 //   print('Enter a word ');
