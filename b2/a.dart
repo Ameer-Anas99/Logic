@@ -162,21 +162,21 @@
 //   print(arr);
 // }
 
-void main() {
-  A s1 = A();
-  s1.hia();
-  s1.HOI();
-}
+// void main() {
+//   A s1 = A();
+//   s1.hia();
+//   s1.HOI();
+// }
 
-class A {
-  hia() {
-    print("haaaaaaaqaai");
-  }
+// class A {
+//   hia() {
+//     print("haaaaaaaqaai");
+//   }
 
-  HOI() {
-    print("hoooooooooooi");
-  }
-}
+//   HOI() {
+//     print("hoooooooooooi");
+//   }
+// }
 
 // void main() {
 //   A s1 = A();
