@@ -156,27 +156,27 @@
 //   print(list);
 // }
 
+// void main() {
+//   List<int> arr = [1, 2, 3, 4, 5];
+//   arr.sort();
+//   print(arr);
+// }
+
 void main() {
-  List<int> arr = [1, 2, 3, 4, 5];
-  arr.sort();
-  print(arr);
+  A s1 = A();
+  s1.hia();
+  s1.HOI();
 }
 
-// void main() {
-//   A s1 = A();
-//   s1.hia();
-//   s1.HOI();
-// }
+class A {
+  hia() {
+    print("haaaaaaaqaai");
+  }
 
-// class A {
-//   hia() {
-//     print("haaaaaaaqaai");
-//   }
-
-//   HOI() {
-//     print("hoooooooooooi");
-//   }
-// }
+  HOI() {
+    print("hoooooooooooi");
+  }
+}
 
 // void main() {
 //   A s1 = A();
