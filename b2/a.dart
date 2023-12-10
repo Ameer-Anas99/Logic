@@ -56,41 +56,39 @@
 //   }
 // }
 
-import 'dart:io';
+// import 'dart:io';
 
-void main() {
-  print('Enter a word ');
-  var word = stdin.readLineSync()!;
-  bool result = isPalindrome(word);
-  print("$word is ${result ? '' : 'not '}a palindrome");
-}
+// void main() {
+//   print('Enter a word ');
+//   var word = stdin.readLineSync()!;
+//   bool result = isPalindrome(word);
+//   print("$word is ${result ? '' : 'not '}a palindrome");
+// }
 
-bool isPalindrome(String word) => word == word.split('').reversed.join('');
+// bool isPalindrome(String word) => word == word.split('').reversed.join('');
 
-
-
-// void main(){
+// void main() {
 //   void isPalindrome(String x) {
-// var flag=0;
-//   for(int i=0;i<x.length;i++){
-//     if(x[i]!=x[x.length-i-1]){
-//       flag=1;
+//     var flag = 0;
+//     for (int i = 0; i < x.length; i++) {
+//       if (x[i] != x[x.length - i - 1]) {
+//         flag = 1;
+//       }
+//     }
+//     if (flag == 1) {
+//       print("$x not palindrome");
+//     } else {
+//       print("$x is palindrome");
 //     }
 //   }
-//   if(flag==1){
-//     print("$x not palindrome");
-//   }else{
-//    print("$x is palindrome");
-//   }
-// }
 // }
 // foldddddddddddddddddddddddddddddddddddddd========================================
 
-// void main(){
-//   List<int>arr=[1,2,3,4,5];
-//   int sum = arr.fold(0,(previous,current)=>previous+current);
-//   print(sum);
-// }
+void main() {
+  List<int> arr = [1, 2, 3, 4, 5];
+  int sum = arr.fold(0, (previous, current) => previous + current);
+  print(sum);
+}
 
 // void main(){
 // List<int>list=[1,2,3,4,5,6,7,8,9,10,11];
