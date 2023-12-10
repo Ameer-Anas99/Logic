@@ -150,17 +150,17 @@
 
 // sort descenting=========================
 
-void main() {
-  List<int> list = [1, 3, 2, 5, 4];
-  list.sort((a, b) => b.compareTo(a));
-  print(list);
-}
-
-// void main(){
-//   List<int>arr=[1,2,3,4,5];
-//   arr.sort();
-//   print(arr);
+// void main() {
+//   List<int> list = [1, 3, 2, 5, 4];
+//   list.sort((a, b) => b.compareTo(a));
+//   print(list);
 // }
+
+void main() {
+  List<int> arr = [1, 2, 3, 4, 5];
+  arr.sort();
+  print(arr);
+}
 
 // void main() {
 //   A s1 = A();
