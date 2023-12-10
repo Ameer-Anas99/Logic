@@ -42,35 +42,32 @@
 //   }
 // }
 
+// import 'dart:io';
+
+// void main() {
+//   for (int i = 0; i < 6; i++) {
+//     for (int s = 0; s < 6; s++) {
+//       stdout.write(' ');
+//     }
+//     for (int j = 1; j <= 6; j++) {
+//       stdout.write(j);
+//     }
+//     stdout.writeln('');
+//   }
+// }
+
 import 'dart:io';
 
 void main() {
-  for (int i = 0; i < 6; i++) {
-    for (int s = 0; s < 6; s++) {
-      stdout.write(' ');
-    }
-    for (int j = 1; j <= 6; j++) {
-      stdout.write(j);
-    }
-    stdout.writeln('');
-  }
+  print('Enter a word ');
+  var word = stdin.readLineSync()!;
+  bool result = isPalindrome(word);
+  print("$word is ${result ? '' : 'not '}a palindrome");
 }
 
-// void main() {
-//   print('Enter a word ');
-//   var word = stdin.readLineSync()!;
-//   bool result = isPalindrome(word);
-//   print("$word is ${result ? '' : 'not '}a palindrome");
-//   }
-// bool isPalindrome(String word) => word == word.split('').reversed.join('');
+bool isPalindrome(String word) => word == word.split('').reversed.join('');
 
-// void main() {
-//   stdout.write('Enter a word: ');
-//   var word = stdin.readLineSync()!;
-//   print("$word IS ${isPalindrome(word) ? "" : 'NOT '}a palindrome");
-// }
 
-// bool isPalindrome(String word) => word == word.split('').reversed.join('');
 
 // void main(){
 //   void isPalindrome(String x) {
