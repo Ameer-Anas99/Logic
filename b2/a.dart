@@ -17,30 +17,30 @@
 //   print(negative);
 //   print(zero);
 // }
-void main() {
-  print("print numberes");
-  countnumberes().listen((num) {
-    print("numberes : $num");
-  });
-}
+// void main() {
+//   print("print numberes");
+//   countnumberes().listen((num) {
+//     print("numberes : $num");
+//   });
+// }
 
-Stream<int> countnumberes() async* {
-  for (int i = 0; i < 5; i++) {
-    await Future.delayed(Duration(seconds: 1));
-    yield i;
-  }
-}
-
-// import 'dart:io';
-
-// void main(){
-//   for(int i=1;i<=5;i++){
-//     for(int j=1;j<=i;j++){
-//       stdout.write("* ");
-//     }
-//     stdout.writeln(" ");
+// Stream<int> countnumberes() async* {
+//   for (int i = 0; i < 5; i++) {
+//     await Future.delayed(Duration(seconds: 1));
+//     yield i;
 //   }
 // }
+
+import 'dart:io';
+
+void main() {
+  for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+      stdout.write("* ");
+    }
+    stdout.writeln(" ");
+  }
+}
 
 // void main(){
 //   for(int i=0;i<6;i++){
