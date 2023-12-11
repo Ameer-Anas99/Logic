@@ -301,37 +301,37 @@
 //   print(list);
 // }
 
-// int century(int year) {
-//   int century = year ~/ 100;
-//   if (year % 100 == 0) {
-//     return century;
-//   } else {
-//     return century + 1;
-//   }
-// }
-
-// void main() {
-//   // Example usage:
-//   int year = 2023;
-//   int result = century(year);
-//   print('The century for $year is $result');
-// }
+int century(int year) {
+  int century = year ~/ 100;
+  if (year % 100 == 0) {
+    return century;
+  } else {
+    return century + 1;
+  }
+}
 
 void main() {
-  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  print(
-      "(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}");
+  // Example usage:
+  int year = 2023;
+  int result = century(year);
+  print('The century for $year is $result');
 }
 
-String createPhoneNumber(List numbers) {
-  var format = "(xxx) xxx-xxxx";
+// void main() {
+//   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+//   print(
+//       "(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}");
+// }
 
-  for (var i = 0; i < numbers.length; i++) {
-    format = format.replaceFirst('x', numbers[i].toString());
-  }
+// String createPhoneNumber(List numbers) {
+//   var format = "(xxx) xxx-xxxx";
 
-  return format;
-}
+//   for (var i = 0; i < numbers.length; i++) {
+//     format = format.replaceFirst('x', numbers[i].toString());
+//   }
+
+//   return format;
+// }
 
 // void main() {
 //   List<String> list = ["M", "m", "1", "d", "h", "h"];
