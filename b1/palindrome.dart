@@ -1,33 +1,46 @@
-// Write a program that checks if a given number is a palindrome using a loop.
+// // Write a program that checks if a given number is a palindrome using a loop.
+
+// import 'dart:io';
+
+// bool isPalindrome(int number) {
+//   String numberStr = number.toString();
+
+//   int start = 0;
+//   int end = numberStr.length - 1;
+
+//   while (start < end) {
+//     if (numberStr[start] != numberStr[end]) {
+//       return false;
+//     }
+
+//     start++;
+//     end--;
+//   }
+
+//   return true;
+// }
+
+// void main() {
+//   print("Enter a number:");
+//   String userInput = stdin.readLineSync()!;
+//   int userNumber = int.parse(userInput);
+
+//   if (isPalindrome(userNumber)) {
+//     print("$userNumber is a palindrome.");
+//   } else {
+//     print("$userNumber is not a palindrome.");
+//   }
+// }
 
 import 'dart:io';
 
-bool isPalindrome(int number) {
-  String numberStr = number.toString();
-
-  int start = 0;
-  int end = numberStr.length - 1;
-
-  while (start < end) {
-    if (numberStr[start] != numberStr[end]) {
-      return false;
-    }
-
-    start++;
-    end--;
-  }
-
-  return true;
-}
-
 void main() {
-  print("Enter a number:");
-  String userInput = stdin.readLineSync()!;
-  int userNumber = int.parse(userInput);
-
-  if (isPalindrome(userNumber)) {
-    print("$userNumber is a palindrome.");
+  stdout.write("Please enter a word: ");
+  var word = stdin.readLineSync();
+  var a = word!.split('').reversed.join('');
+  if (word == a) {
+    print("this is Palindrome");
   } else {
-    print("$userNumber is not a palindrome.");
+    print("not palindrome");
   }
 }
