@@ -672,3 +672,12 @@
 //   int result = countVowels(input);
 //   print("Number of vowels in '$input': $result");
 // }
+
+void main() {
+  List<int> a = [1, 2, 3, 4, 5, 6, 7, 8];
+  List<int> b = a.where((num) => num % 2 == 1).toList();
+
+  print(b);
+  List<int> c = a.where((num) => num % 2 == 0).toList();
+  print(c);
+}
