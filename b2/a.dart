@@ -317,20 +317,21 @@
 //   print('The century for $year is $result');
 // }
 
-// void main() {
-//   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-//   print("(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}");
-// }
-// String createPhoneNumber(List numbers) {
-//   var format = "(xxx) xxx-xxxx";
+void main() {
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  print(
+      "(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}");
+}
 
-//   for(var i = 0; i < numbers.length; i++)
-//   {
-//     format = format.replaceFirst('x', numbers[i].toString());
-//   }
+String createPhoneNumber(List numbers) {
+  var format = "(xxx) xxx-xxxx";
 
-//   return format;
-// }
+  for (var i = 0; i < numbers.length; i++) {
+    format = format.replaceFirst('x', numbers[i].toString());
+  }
+
+  return format;
+}
 
 // void main() {
 //   List<String> list = ["M", "m", "1", "d", "h", "h"];
@@ -673,11 +674,11 @@
 //   print("Number of vowels in '$input': $result");
 // }
 
-void main() {
-  List<int> a = [1, 2, 3, 4, 5, 6, 7, 8];
-  List<int> b = a.where((num) => num % 2 == 1).toList();
+// void main() {
+//   List<int> a = [1, 2, 3, 4, 5, 6, 7, 8];
+//   List<int> b = a.where((num) => num % 2 == 1).toList();
 
-  print(b);
-  List<int> c = a.where((num) => num % 2 == 0).toList();
-  print(c);
-}
+//   print(b);
+//   List<int> c = a.where((num) => num % 2 == 0).toList();
+//   print(c);
+// }
