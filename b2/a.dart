@@ -333,12 +333,12 @@
 //   return format;
 // }
 
-// void main() {
-//   List<String> list = ["M", "m", "1", "d", "h", "h"];
-//   Set<String> uniqueSet = list.toSet();
-//   List<String> uniqueList = uniqueSet.toList();
-//   print(uniqueList);
-// }
+void main() {
+  List<String> list = ["M", "m", "1", "d", "h", "h"];
+  Set<String> uniqueSet = list.toSet();
+  List<String> uniqueList = uniqueSet.toList();
+  print(uniqueList);
+}
 
 // import 'dart:io';
 
