@@ -301,21 +301,21 @@
 //   print(list);
 // }
 
-int century(int year) {
-  int century = year ~/ 100;
-  if (year % 100 == 0) {
-    return century;
-  } else {
-    return century + 1;
-  }
-}
+// int century(int year) {
+//   int century = year ~/ 100;
+//   if (year % 100 == 0) {
+//     return century;
+//   } else {
+//     return century + 1;
+//   }
+// }
 
-void main() {
-  // Example usage:
-  int year = 2023;
-  int result = century(year);
-  print('The century for $year is $result');
-}
+// void main() {
+//   // Example usage:
+//   int year = 2023;
+//   int result = century(year);
+//   print('The century for $year is $result');
+// }
 
 // void main() {
 //   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
