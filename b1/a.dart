@@ -87,12 +87,12 @@
 //   print(String.fromCharCode(66));
 //   print(String.fromEnvironment("Ameer"));
 
-// }
-void main() {
+ // }
+// void main() {
   //  1 to 5,but ....
   // for (int i = 0; i <= 5; i++) {
   //   for (int j = 0; j <= i; j++) {
   //     print(i);
   //   }
   // }
-}
+// }
