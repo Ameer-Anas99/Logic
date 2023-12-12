@@ -333,34 +333,35 @@
 //   return format;
 // }
 
+// void main() {
+//   List<String> list = ["M", "m", "1", "d", "h", "h"];
+//   Set<String> uniqueSet = list.toSet();
+//   List<String> uniqueList = uniqueSet.toList();
+//   print(uniqueList);
+// }
+
+import 'dart:io';
+
 void main() {
-  List<String> list = ["M", "m", "1", "d", "h", "h"];
-  Set<String> uniqueSet = list.toSet();
-  List<String> uniqueList = uniqueSet.toList();
-  print(uniqueList);
+  int n = 5;
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= i; j++) {
+      stdout.write("hahi ${i}");
+    }
+    stdout.writeln("");
+  }
 }
 
-// import 'dart:io';
+List<List<int>> pyramid(int n) {
+  List<List<int>> result = [];
 
-// void main(){
-//   int n=5;
-//   for(int i=1;i<=n;i++){
-//     for(int j=1;j<=i;j++){
-//       stdout.write("hahi ${i}");
-//     }
-//     stdout.writeln("");
-//   }
-// }
-// List<List<int>> pyramid(int n) {
-//   List<List<int>> result = [];
+  for (int i = 1; i <= n; i++) {
+    List<int> row = List.filled(i, 1);
+    result.add(row);
+  }
 
-//   for (int i = 1; i <= n; i++) {
-//     List<int> row = List.filled(i, 1);
-//     result.add(row);
-//   }
-
-//   return result;
-// }
+  return result;
+}
 
 // void main(){
 // B s1=B();
