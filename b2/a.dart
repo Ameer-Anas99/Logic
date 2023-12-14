@@ -524,23 +524,23 @@
 //   print(list);
 // }
 
-void main() {
-  Map<String, int> Mymap = {
-    "hai": 10,
-    "hello": 20,
-  };
-
-  print("haaaaaai${Mymap["hai"]}");
-}
-
-// void main(){
-//   Map<int,String>Mymap={
-//     1:"hai",
-//     2:"hello",
-//     3:"koooooi",
+// void main() {
+//   Map<String, int> Mymap = {
+//     "hai": 10,
+//     "hello": 20,
 //   };
-//   print("${Mymap[1]}");
+
+//   print("haaaaaai${Mymap["hai"]}");
 // }
+
+void main() {
+  Map<int, String> Mymap = {
+    1: "hai",
+    2: "hello",
+    3: "koooooi",
+  };
+  print("${Mymap[1]}");
+}
 
 // void main(){
 //   List<int>list=[1,2,3,2,4,1,5,6];
