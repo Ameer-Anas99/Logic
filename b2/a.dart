@@ -434,20 +434,18 @@
 //   sendPort.send('Hello from the isolate!');
 // }
 
-void main() {
-  int n = 5;
-  String str = "";
-  for (int i = 1; i <= n; i++) {
-    str += "${i} sheep...";
-  }
-  print(str);
-}
-
-// void main(){
-//   int n=10;
-//   for(int i=0;i<n;i+=2){
-
+// void main() {
+//   int n = 5;
+//   String str = "";
+//   for (int i = 1; i <= n; i++) {
+//     str += "${i} sheep...";
 //   }
+//   print(str);
+// }
+
+// void main() {
+//   int n = 10;
+//   for (int i = 0; i < n; i += 2) {}
 // }
 
 // void main() {
@@ -515,16 +513,16 @@ void main() {
 //   (A>B)?print(A):print(B);
 // }
 
-// void main(){
-//   int A;
-// A=15;
-// print(A);
-// List<int>list=[1,2,3,4,5,6,7,8,9,10];
-// list.add(11);
-// print(list);
-// list.insert(3, 12);
-// print(list);
-// }
+void main() {
+  int A;
+  A = 15;
+  print(A);
+  List<int> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  list.add(11);
+  print(list);
+  list.insert(3, 12);
+  print(list);
+}
 
 // void main() {
 // Map<String, int>Mymap={
