@@ -434,14 +434,14 @@
 //   sendPort.send('Hello from the isolate!');
 // }
 
-// void main(){
-// int n=5;
-// String str="";
-// for(int i=1;i<=n;i++){
-//   str+="${i} sheep...";
-// }
-// print(str);
-// }
+void main() {
+  int n = 5;
+  String str = "";
+  for (int i = 1; i <= n; i++) {
+    str += "${i} sheep...";
+  }
+  print(str);
+}
 
 // void main(){
 //   int n=10;
