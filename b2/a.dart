@@ -399,40 +399,40 @@
 //   hai(23, 435);
 // }
 
-import 'dart:io';
-import 'dart:isolate';
+// import 'dart:io';
+// import 'dart:isolate';
 
-void main() {
-  // Create a ReceivePort to handle incoming messages from the isolate
-  ReceivePort receivePort = ReceivePort();
+// void main() {
+//   // Create a ReceivePort to handle incoming messages from the isolate
+//   ReceivePort receivePort = ReceivePort();
 
-  // Spawn a new isolate and send the SendPort to the main isolate
-  Isolate.spawn(isolateFunction, receivePort.sendPort);
+//   // Spawn a new isolate and send the SendPort to the main isolate
+//   Isolate.spawn(isolateFunction, receivePort.sendPort);
 
-  // Listen for messages from the isolate
-  receivePort.listen((message) {
-    print('Main Isolate Received: $message');
-  });
+//   // Listen for messages from the isolate
+//   receivePort.listen((message) {
+//     print('Main Isolate Received: $message');
+//   });
 
-  // Send a message to the isolate
-  receivePort.sendPort.send('Hello from the main isolate!');
-}
+//   // Send a message to the isolate
+//   receivePort.sendPort.send('Hello from the main isolate!');
+// }
 
-void isolateFunction(SendPort sendPort) {
-  // Create a ReceivePort to handle incoming messages from the main isolate
-  ReceivePort receivePort = ReceivePort();
+// void isolateFunction(SendPort sendPort) {
+//   // Create a ReceivePort to handle incoming messages from the main isolate
+//   ReceivePort receivePort = ReceivePort();
 
-  // Send the SendPort of the isolate to the main isolate
-  sendPort.send(receivePort.sendPort);
+//   // Send the SendPort of the isolate to the main isolate
+//   sendPort.send(receivePort.sendPort);
 
-  // Listen for messages from the main isolate
-  receivePort.listen((message) {
-    print('Isolate Received: $message');
-  });
+//   // Listen for messages from the main isolate
+//   receivePort.listen((message) {
+//     print('Isolate Received: $message');
+//   });
 
-  // Send a message to the main isolate
-  sendPort.send('Hello from the isolate!');
-}
+//   // Send a message to the main isolate
+//   sendPort.send('Hello from the isolate!');
+// }
 
 // void main(){
 // int n=5;
