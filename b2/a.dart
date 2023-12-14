@@ -513,25 +513,25 @@
 //   (A>B)?print(A):print(B);
 // }
 
-void main() {
-  int A;
-  A = 15;
-  print(A);
-  List<int> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  list.add(11);
-  print(list);
-  list.insert(3, 12);
-  print(list);
-}
-
 // void main() {
-// Map<String, int>Mymap={
-// "hai":10,
-// "hello":20,
-// };
-
-// print("haaaaaai${Mymap["hai"]}");
+//   int A;
+//   A = 15;
+//   print(A);
+//   List<int> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   list.add(11);
+//   print(list);
+//   list.insert(3, 12);
+//   print(list);
 // }
+
+void main() {
+  Map<String, int> Mymap = {
+    "hai": 10,
+    "hello": 20,
+  };
+
+  print("haaaaaai${Mymap["hai"]}");
+}
 
 // void main(){
 //   Map<int,String>Mymap={
