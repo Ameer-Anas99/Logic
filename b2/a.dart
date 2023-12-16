@@ -609,26 +609,26 @@
 //   print(list);
 // }
 
-void main() {
-  List<int> list = [8, -2, -5, 6, 8, 8, 0, 0];
-  List<int> positive = [];
-  List<int> negative = [];
-  List<int> zero = [];
+// void main() {
+//   List<int> list = [8, -2, -5, 6, 8, 8, 0, 0];
+//   List<int> positive = [];
+//   List<int> negative = [];
+//   List<int> zero = [];
 
-  for (int i = 0; i < list.length; i++) {
-    if (list[i] > 0 && !positive.contains(list[i])) {
-      positive.add(list[i]);
-    } else if (list[i] < 0 && !negative.contains(list[i])) {
-      negative.add(list[i]);
-    } else if (list[i] == 0 && !zero.contains(list[i])) {
-      zero.add(list[i]);
-    }
-  }
+//   for (int i = 0; i < list.length; i++) {
+//     if (list[i] > 0 && !positive.contains(list[i])) {
+//       positive.add(list[i]);
+//     } else if (list[i] < 0 && !negative.contains(list[i])) {
+//       negative.add(list[i]);
+//     } else if (list[i] == 0 && !zero.contains(list[i])) {
+//       zero.add(list[i]);
+//     }
+//   }
 
-  print(positive);
-  print(negative);
-  print(zero);
-}
+//   print(positive);
+//   print(negative);
+//   print(zero);
+// }
 
 // void main() {
 //   List<int> list = [8, -2, -5, 6, 8, 8, 0, 0];
@@ -650,28 +650,27 @@ void main() {
 //   print(zero);
 // }
 
-// int countVowels(String inputString) {
+int countVowels(String inputString) {
+  Set<String> vowels = {'a', 'e', 'i', 'o', 'u'};
+  String lowercaseString = inputString.toLowerCase();
 
-//   Set<String> vowels = {'a', 'e', 'i', 'o', 'u'};
-//   String lowercaseString = inputString.toLowerCase();
+  int vowelCount = 0;
 
-//   int vowelCount = 0;
+  for (int i = 0; i < lowercaseString.length; i++) {
+    if (vowels.contains(lowercaseString[i])) {
+      vowelCount++;
+    }
+  }
 
-//   for (int i = 0; i < lowercaseString.length; i++) {
-//     if (vowels.contains(lowercaseString[i])) {
-//       vowelCount++;
-//     }
-//   }
+  return vowelCount;
+}
 
-//   return vowelCount;
-// }
-
-// void main() {
-//   // Example usage
-//   String input = "hello world";
-//   int result = countVowels(input);
-//   print("Number of vowels in '$input': $result");
-// }
+void main() {
+  // Example usage
+  String input = "hello world";
+  int result = countVowels(input);
+  print("Number of vowels in '$input': $result");
+}
 
 // void main() {
 //   List<int> a = [1, 2, 3, 4, 5, 6, 7, 8];
