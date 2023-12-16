@@ -583,25 +583,25 @@
 //   }
 // }
 
-void main() {
-  List<int> list = [2, 3, -5, 0, 0, 2, -6, -1];
-  List<int> positive = [];
-  List<int> zero = [];
-  List<int> negative = [];
+// void main() {
+//   List<int> list = [2, 3, -5, 0, 0, 2, -6, -1];
+//   List<int> positive = [];
+//   List<int> zero = [];
+//   List<int> negative = [];
 
-  for (int i = 0; i < list.length; i++) {
-    if (list[i] > 0) {
-      positive.add(list[i]);
-    } else if (list[i] == 0) {
-      zero.add(list[i]);
-    } else if (list[i] < 0) {
-      negative.add(list[i]);
-    }
-  }
-  print(positive);
-  print(zero);
-  print(negative);
-}
+//   for (int i = 0; i < list.length; i++) {
+//     if (list[i] > 0) {
+//       positive.add(list[i]);
+//     } else if (list[i] == 0) {
+//       zero.add(list[i]);
+//     } else if (list[i] < 0) {
+//       negative.add(list[i]);
+//     }
+//   }
+//   print(positive);
+//   print(zero);
+//   print(negative);
+// }
 
 // void main(){
 //   List<int>list=[1,4,5,7,3,8,0];
@@ -609,26 +609,26 @@ void main() {
 //   print(list);
 // }
 
-// void main() {
-//   List<int> list = [8, -2, -5, 6, 8, 8, 0, 0];
-//   List<int> positive = [];
-//   List<int> negative = [];
-//   List<int> zero = [];
+void main() {
+  List<int> list = [8, -2, -5, 6, 8, 8, 0, 0];
+  List<int> positive = [];
+  List<int> negative = [];
+  List<int> zero = [];
 
-//   for (int i = 0; i < list.length; i++) {
-//     if (list[i] > 0&&!positive.contains(list[i])) {
-//         positive.add(list[i]);
-//           } else if (list[i] < 0&&!negative.contains(list[i])) {
-//       negative.add(list[i]);
-//     } else if (list[i] == 0&&!zero.contains(list[i])) {
-//       zero.add(list[i]);
-//     }
-//   }
+  for (int i = 0; i < list.length; i++) {
+    if (list[i] > 0 && !positive.contains(list[i])) {
+      positive.add(list[i]);
+    } else if (list[i] < 0 && !negative.contains(list[i])) {
+      negative.add(list[i]);
+    } else if (list[i] == 0 && !zero.contains(list[i])) {
+      zero.add(list[i]);
+    }
+  }
 
-//   print(positive);
-//   print(negative);
-//   print(zero);
-// }
+  print(positive);
+  print(negative);
+  print(zero);
+}
 
 // void main() {
 //   List<int> list = [8, -2, -5, 6, 8, 8, 0, 0];
