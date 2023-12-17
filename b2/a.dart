@@ -506,12 +506,12 @@
 //   }
 // }
 
-// void main(){
-//   int A=10;
-//   int B=20;
+void main() {
+  int A = 10;
+  int B = 20;
 
-//   (A>B)?print(A):print(B);
-// }
+  (A > B) ? print(A) : print(B);
+}
 
 // void main() {
 //   int A;
@@ -650,27 +650,27 @@
 //   print(zero);
 // }
 
-int countVowels(String inputString) {
-  Set<String> vowels = {'a', 'e', 'i', 'o', 'u'};
-  String lowercaseString = inputString.toLowerCase();
+// int countVowels(String inputString) {
+//   Set<String> vowels = {'a', 'e', 'i', 'o', 'u'};
+//   String lowercaseString = inputString.toLowerCase();
 
-  int vowelCount = 0;
+//   int vowelCount = 0;
 
-  for (int i = 0; i < lowercaseString.length; i++) {
-    if (vowels.contains(lowercaseString[i])) {
-      vowelCount++;
-    }
-  }
+//   for (int i = 0; i < lowercaseString.length; i++) {
+//     if (vowels.contains(lowercaseString[i])) {
+//       vowelCount++;
+//     }
+//   }
 
-  return vowelCount;
-}
+//   return vowelCount;
+// }
 
-void main() {
-  // Example usage
-  String input = "hello world";
-  int result = countVowels(input);
-  print("Number of vowels in '$input': $result");
-}
+// void main() {
+//   // Example usage
+//   String input = "hello world";
+//   int result = countVowels(input);
+//   print("Number of vowels in '$input': $result");
+// }
 
 // void main() {
 //   List<int> a = [1, 2, 3, 4, 5, 6, 7, 8];
