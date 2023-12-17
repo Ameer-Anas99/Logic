@@ -380,24 +380,25 @@
 // }
 // }
 
-// Future <void>hai(int a,int b)async{
-// await Future.delayed(Duration(seconds: 2));
-// print(a+b);
-// }
-// void main(){
-//   print("please waite......!");
-//   hai(10, 30);
-// }
-
 Future<void> hai(int a, int b) async {
-  await Future.delayed(Duration(seconds: 3));
+  await Future.delayed(Duration(seconds: 2));
   print(a + b);
 }
 
 void main() {
-  print("please waite .... answer will come");
-  hai(23, 435);
+  print("please waite......!");
+  hai(10, 30);
 }
+
+// Future<void> hai(int a, int b) async {
+//   await Future.delayed(Duration(seconds: 3));
+//   print(a + b);
+// }
+
+// void main() {
+//   print("please waite .... answer will come");
+//   hai(23, 435);
+// }
 
 // import 'dart:io';
 // import 'dart:isolate';
