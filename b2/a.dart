@@ -333,12 +333,12 @@
 //   return format;
 // }
 
-// void main() {
-//   List<String> list = ["M", "m", "1", "d", "h", "h"];
-//   Set<String> uniqueSet = list.toSet();
-//   List<String> uniqueList = uniqueSet.toList();
-//   print(uniqueList);
-// }
+void main() {
+  List<String> list = ["M", "m", "1", "d", "h", "h"];
+  Set<String> uniqueSet = list.toSet();
+  List<String> uniqueList = uniqueSet.toList();
+  print(uniqueList);
+}
 
 // import 'dart:io';
 
@@ -380,15 +380,15 @@
 // }
 // }
 
-Future<void> hai(int a, int b) async {
-  await Future.delayed(Duration(seconds: 2));
-  print(a + b);
-}
+// Future<void> hai(int a, int b) async {
+//   await Future.delayed(Duration(seconds: 2));
+//   print(a + b);
+// }
 
-void main() {
-  print("please waite......!");
-  hai(10, 30);
-}
+// void main() {
+//   print("please waite......!");
+//   hai(10, 30);
+// }
 
 // Future<void> hai(int a, int b) async {
 //   await Future.delayed(Duration(seconds: 3));
