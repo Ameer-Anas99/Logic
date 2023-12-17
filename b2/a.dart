@@ -389,50 +389,50 @@
 //   hai(10, 30);
 // }
 
-// Future <void>hai(int a,int b)async{
-//   await Future.delayed(Duration(seconds: 3));
-//   print(a+b);
-// }
-
-// void main(){
-//   print("please waite .... answer will come");
-//   hai(23, 435);
-// }
-
-import 'dart:io';
-import 'dart:isolate';
+Future<void> hai(int a, int b) async {
+  await Future.delayed(Duration(seconds: 3));
+  print(a + b);
+}
 
 void main() {
-  // Create a ReceivePort to handle incoming messages from the isolate
-  ReceivePort receivePort = ReceivePort();
-
-  // Spawn a new isolate and send the SendPort to the main isolate
-  Isolate.spawn(isolateFunction, receivePort.sendPort);
-
-  // Listen for messages from the isolate
-  receivePort.listen((message) {
-    print('Main Isolate Received: $message');
-  });
-
-  // Send a message to the isolate
-  receivePort.sendPort.send('Hello from the main isolate!');
+  print("please waite .... answer will come");
+  hai(23, 435);
 }
 
-void isolateFunction(SendPort sendPort) {
-  // Create a ReceivePort to handle incoming messages from the main isolate
-  ReceivePort receivePort = ReceivePort();
+// import 'dart:io';
+// import 'dart:isolate';
 
-  // Send the SendPort of the isolate to the main isolate
-  sendPort.send(receivePort.sendPort);
+// void main() {
+//   // Create a ReceivePort to handle incoming messages from the isolate
+//   ReceivePort receivePort = ReceivePort();
 
-  // Listen for messages from the main isolate
-  receivePort.listen((message) {
-    print('Isolate Received: $message');
-  });
+//   // Spawn a new isolate and send the SendPort to the main isolate
+//   Isolate.spawn(isolateFunction, receivePort.sendPort);
 
-  // Send a message to the main isolate
-  sendPort.send('Hello from the isolate!');
-}
+//   // Listen for messages from the isolate
+//   receivePort.listen((message) {
+//     print('Main Isolate Received: $message');
+//   });
+
+//   // Send a message to the isolate
+//   receivePort.sendPort.send('Hello from the main isolate!');
+// }
+
+// void isolateFunction(SendPort sendPort) {
+//   // Create a ReceivePort to handle incoming messages from the main isolate
+//   ReceivePort receivePort = ReceivePort();
+
+//   // Send the SendPort of the isolate to the main isolate
+//   sendPort.send(receivePort.sendPort);
+
+//   // Listen for messages from the main isolate
+//   receivePort.listen((message) {
+//     print('Isolate Received: $message');
+//   });
+
+//   // Send a message to the main isolate
+//   sendPort.send('Hello from the isolate!');
+// }
 
 // void main() {
 //   int n = 5;
