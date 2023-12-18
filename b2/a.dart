@@ -84,11 +84,11 @@
 // }
 // foldddddddddddddddddddddddddddddddddddddd========================================
 
-// void main() {
-//   List<int> arr = [1, 2, 3, 4, 5];
-//   int sum = arr.fold(0, (previous, current) => previous + current);
-//   print(sum);
-// }
+void main() {
+  List<int> arr = [1, 2, 3, 4, 5];
+  int sum = arr.fold(0, (previous, current) => previous + current);
+  print(sum);
+}
 
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
@@ -333,12 +333,12 @@
 //   return format;
 // }
 
-void main() {
-  List<String> list = ["M", "m", "1", "d", "h", "h"];
-  Set<String> uniqueSet = list.toSet();
-  List<String> uniqueList = uniqueSet.toList();
-  print(uniqueList);
-}
+// void main() {
+//   List<String> list = ["M", "m", "1", "d", "h", "h"];
+//   Set<String> uniqueSet = list.toSet();
+//   List<String> uniqueList = uniqueSet.toList();
+//   print(uniqueList);
+// }
 
 // import 'dart:io';
 
