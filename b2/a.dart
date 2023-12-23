@@ -84,11 +84,11 @@
 // }
 // foldddddddddddddddddddddddddddddddddddddd========================================
 
-void main() {
-  List<int> arr = [1, 2, 3, 4, 5];
-  int sum = arr.fold(0, (previous, current) => previous + current);
-  print(sum);
-}
+// void main() {
+//   List<int> arr = [1, 2, 3, 4, 5];
+//   int sum = arr.fold(0, (previous, current) => previous + current);
+//   print(sum);
+// }
 
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
@@ -96,15 +96,15 @@ void main() {
 //   print(sum);
 // }
 
-// void main() {
-//   List<int> arr = [1, 2, 3, 1, 2, 3, 4, 5, 6, 5, 4, 9, 1];
-//   int sum = arr.fold(0, (previous, current) => previous + current);
-//   if (sum % 2 == 0) {
-//     print("even");
-//   } else {
-//     print("odd");
-//   }
-// }
+void main() {
+  List<int> arr = [1, 2, 3, 1, 2, 3, 4, 5, 6, 5, 4, 9, 1];
+  int sum = arr.fold(0, (previous, current) => previous + current);
+  if (sum % 2 == 0) {
+    print("even");
+  } else {
+    print("odd");
+  }
+}
 
 // List<int> solve(List<int> arr) {
 
