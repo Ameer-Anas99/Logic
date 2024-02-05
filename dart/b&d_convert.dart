@@ -1,3 +1,4 @@
+// Dart Binary to Decimal Converter:
 int binaryToDecimal(String binary) {
   int decimal = 0;
   int binaryLength = binary.length;
